@@ -1,0 +1,385 @@
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+            font-family: 'Inter', sans-serif;
+            color: #6366F1;
+            line-height: 1.6;
+            background: #FFFFFF;
+        }
+
+        /* HEADER/NAV */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 16px 24px;
+            background: #FFFFFF;
+            border-bottom: 1px solid #E2E8F0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: 700;
+            color: #6366F1;
+        }
+
+        nav a {
+            color: #64748B;
+            text-decoration: none;
+            margin: 0 16px;
+            font-size: 14px;
+            transition: color 0.2s;
+        }
+
+        nav a:hover {
+            color: #6366F1;
+        }
+
+        .nav-btn {
+            background: #6366F1;
+            color: white;
+            padding: 10px 24px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 600;
+            transition: background 0.2s;
+        }
+
+        .nav-btn:hover {
+            background: #8B5CF6;
+            color: #FFFFFF;
+        }
+
+        /* HERO SECTION */
+        .hero {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+            padding: 80px 24px;
+            background: linear-gradient(135deg, rgba(99, 102, 241, 0.05) 0%, rgba(139, 92, 246, 0.05) 100%);
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .hero h1 {
+            font-size: 56px;
+            font-weight: 700;
+            margin-bottom: 16px;
+            color: #1E293B;
+            line-height: 1.2;
+        }
+
+        .hero p {
+            font-size: 20px;
+            color: #64748B;
+            margin-bottom: 32px;
+            max-width: 600px;
+            line-height: 1.5;
+        }
+        .hero-btn {
+            background: #6366F1;
+            color: white;
+            padding: 16px 48px;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+            box-shadow: 0 4px 12px rgba(99, 102, 241, 0.3);
+        }
+
+        .hero-btn:hover {
+            background: #8B5CF6;
+            box-shadow: 0 6px 16px rgba(99, 102, 241, 0.4);
+            transform: translateY(-2px);
+        }
+
+        /* FEATURES SECTION */
+        .features {
+            padding: 80px 24px;
+            background: #FFFFFF;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .section-title {
+            font-size: 32px;
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 48px;
+            color: #1E293B;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 32px;
+            margin-bottom: 60px;
+        }
+
+        .features-card {
+            padding: 32px;
+            background: #F8FAFC;
+            border: 1px solid #E2E8F0;
+            border-radius: 12px;
+            transition: all 0.3s;
+        }
+
+        .features-card:hover {
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+            transform: translateY(-4px);
+            border-color: #6366F1;
+        }
+
+        .features-icon {
+            width: 48px;
+            height: 48px;
+            background: linear-gradient(135deg, #6366F1, #8B5CF6);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            margin-bottom: 16px;
+        }
+
+        .features-card h3 {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 12px;
+            color: #1E293B;
+        }
+
+        .features-card p {
+            font-size: 14px;
+            color: #64748B;
+            line-height: 1.6;
+        }
+
+        /* HOW IT WORKS */
+        .how-it-works {
+            padding: 80px 24px;
+            background: #F8FAFC;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .steps-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 32px;
+            margin-top: 48px;
+        }
+
+        .step {
+            text-align: center;
+        }
+
+        .step-number {
+            width: 56px;
+            height: 56px;
+            background: #6366F1;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            font-weight: 700;
+            margin: 0 auto 16px;
+        }
+
+        .step h4 {
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: #1E293B;
+        }
+
+        .step p {
+            font-size: 14px;
+            color: #64748B;
+        }
+
+        /* Reviews */
+        .social-proof {
+            padding: 80px 24px;
+            background: #FFFFFF;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 32px;
+            margin-top: 48px;
+            text-align: center;
+        }
+
+        .stat {
+            padding: 32px;
+            background: #F8FAFC;
+            border-radius: 12px;
+            border: 1px solid #E2E8F0;
+        }
+
+        .stat-number {
+            font-size: 36px;
+            font-weight: 700;
+            color: #6366F1;
+            margin-bottom: 8px;
+        }
+
+        .stat-label {
+            font-size: 14px;
+            color: #64748B;
+        }
+
+        /* Getting Started */
+        .get-started {
+            padding: 80px 24px;
+            background: linear-gradient(135deg, rgba(99, 102, 241, 0.1) 0%, rgba(139, 92, 246, 0.1) 100%);
+            text-align: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .get-started h1 {
+            font-size: 36px;
+            font-weight: 700;
+            margin-bottom: 16px;
+            color: #1E293B;
+        }
+
+        .get-started p {
+            font-size: 18px;
+            color: #64748B;
+            margin-bottom: 32px;
+        }
+        .get-started button {
+            background: #6366F1;
+            color: white;
+            padding: 14px 40px;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .get-started button:hover {
+            background: #8B5CF6;
+        }
+
+        /* FOOTER */
+        footer {
+            background: #1E293B;
+            color: white;
+            padding: 48px 24px;
+            text-align: center;
+        }
+
+        footer p {
+            margin-bottom: 12px;
+            font-size: 14px;
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        footer a {
+            color: rgba(255, 255, 255, 0.9);
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        footer a:hover {
+            color: #6366F1;
+        }
+
+       
+        /* RESPONSIVE */
+        @media (max-width: 1024px) {
+            .features-grid,
+            .steps-grid,
+            .stats-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .hero h1 {
+                font-size: 40px;
+            }
+
+            nav a {
+                display: inline;
+            }
+        }
+
+        @media (max-width: 768px) {
+            header {
+                padding: 12px 16px;
+            }
+
+            .logo {
+                font-size: 20px;
+            }
+
+            .nav-btn {
+                padding: 8px 16px;
+                font-size: 12px;
+            }
+
+            .hero {
+                padding: 60px 16px;
+            }
+
+            .hero h1 {
+                font-size: 32px;
+            }
+
+            .hero p {
+                font-size: 16px;
+            }
+
+            .features,
+            .how-it-works,
+            .social-proof,
+            .get-started {
+                padding: 60px 16px;
+            }
+
+            .section-title {
+                font-size: 24px;
+                margin-bottom: 32px;
+            }
+
+            .features-grid,
+            .steps-grid,
+            .stats-grid {
+                grid-template-columns: 1fr;
+                gap: 24px;
+            }
+
+            .features-card,
+            .stat {
+                padding: 24px;
+            }
+
+            .get-started h2 {
+                font-size: 24px;
+            }
+
+            .get-started p {
+                font-size: 16px;
+            }
+        }
